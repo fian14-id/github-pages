@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>Heroes | Responsive Movie Landing Page Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">Fian14</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="ini.html" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;">For Wibu</a></li>
+				<li><a href="kalender.html" style="--i:3;">Kalender</a></li>
+				<li><a href="#" style="--i:4;">Games</a></li>
+				<li><a href="#" style="--i:5;">More</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="image/img1.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="image/img2.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="image/img3.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="image/img4.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="https://www.facebook.com/fian.frefayer" style="--i:9">Facebook</a></li>
+				<li><a href="https://mobile.twitter.com/fiannnn14" style="--i:8">Twitter</a></li>
+				<li><a href="https://www.instagram.com/fiannn14_/" style="--i:7">Instagram</a></li>
+			</ul>
+			<p class="copyrightText">©Mochamad Allifian Ar'rasyid. 2022</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+
