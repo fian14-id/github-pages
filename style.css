@@ -164,6 +164,52 @@ section .container .box .imgBx.active:hover img
 {
     text-align: center;
 }
+.sampul {
+	border-radius: 10px;
+	max-width: 400px;
+	min-height: 200px;
+}
+.file {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	align-items: stretch;
+}
+.file-1 {
+	background-color: #111;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 5px;
+}
+.file-1 p {
+	color: crimson;
+}
+.file-1 h4 b {
+	font-size: 2,5em;
+	color: gold;
+}
+.file-1 ul li {
+	list-style-type: none;
+	font-size: 1em;
+	color: #fff;
+}
+.file-2 {
+	background-color: #111;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 5px;
+}
+.file-2 p {
+	color: crimson;
+}
+.file-2 h4 b {
+	color: gold;
+}
+.file-2 ul li {
+	list-style-type: none;
+	font-size: 1em;
+	color: #fff;
+}
 .footer
 {
 	position: absolute;
