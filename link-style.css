@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Patrick Hand SC', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /* background-color: rgb(43, 29, 59); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), 
+    rgba(0, 0, 0, 0.8)), url("./img/oi.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.nav {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.nav img {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.nav h2 {
+    color: #fff;
+}.nav li {
+    list-style-type: none;
+}
+.nav li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: row;
+    color: #fff;
+}
+.nav-link {
+    display: flex;
+    justify-content: center;
+}
+.nav-link li {
+    list-style-type: none;
+    display: inline;
+    font-size: 15px;
+    padding: 10px;
+}
+.nav-link li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-link li a:hover {
+    color: deepskyblue;
+    transition: all ease-in-out .25s;
+}
+.contex {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btnLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.btnLink:hover {
+    background-color: aquamarine;
+    transition: all ease-in-out .25s;
+}
+.btnLink img {
+    width: 35px;
+    height: 35px;
+    position: static;
+}
+.btnLink p a {
+    text-decoration: none;
+    color: cornflowerblue;
+    padding-left: 25px;
+    font-size: 1.5em;
+}
+.btnLink p a:hover {
+    color: #fff;
+
+}
+@media screen and (max-width:680px){
+
+	#maincontent{
+		width: auto;
+		float: none;
+	}
+	#sidebar{
+		width: auto;
+		float: none;
+	}
+}
+
+/* Jendela Pop Up */
+#popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;   
+    background: rgba (0, 0, 0, .7) ;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+}    
+.window {
+    width: 250px;
+    height: 140px;
+    color: #222;
+    background: rgb(40, 255, 255);    
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 15% auto;
+}    
+.window h2 {
+    margin: 30px 0 0 0;
+}    
+/* Button Close */
+.close-button {
+    width: 9%;
+    height: 20%;
+    line-height: 23px;
+    background: #000;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+/* Memunculkan Jendela Pop Up*/
+
+#popup:target {
+    visibility: visible;
+}
