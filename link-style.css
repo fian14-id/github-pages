@@ -79,6 +79,10 @@ body {
     background-color: #fff;
     border-radius: 15px;
 }
+.btnLink:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+}
 .btnLink:hover {
     background-color: aquamarine;
     transition: all ease-in-out .25s;
