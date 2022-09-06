@@ -124,7 +124,7 @@ body {
 .window {
     width: 250px;
     height: 140px;
-    color: #222;
+    color: #fff;
     background-color: rgba(255, 255, 255, .15);  
 
  backdrop-filter: blur(5px);
