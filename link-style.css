@@ -126,8 +126,7 @@ body {
     height: 140px;
     color: #fff;
     background-color: rgba(255, 255, 255, .15);  
-
- backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     position: relative;
     padding: 10px;
