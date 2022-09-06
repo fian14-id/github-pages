@@ -11,7 +11,7 @@
 body {
     /* background-color: rgb(43, 29, 59); */
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), 
-    rgba(0, 0, 0, 0.8)), url("./img/oi.jpeg");
+    rgba(0, 0, 0, 0.8)), url("./img/oi.jpeg"); /*set background*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
