@@ -76,7 +76,7 @@ body {
     height: 100%;
     padding: 20px;
     margin: 10px;
-    background: inherit;
+    background: #fff;
     border-radius: 15px;
 }
 .btnLink:before {
