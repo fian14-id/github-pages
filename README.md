@@ -14,7 +14,7 @@ Sc website  <a href="https:\\fianbro.github.io">/>Click in here</a>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=fianbro&show_icons=true&theme=tokyonight)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fianbro&hide=typescript,html,php)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fianbro&hide=typescript,html,php)](https://github.com/fianbro.github.io/README.md)
 
 <!-- 
 # Credits
