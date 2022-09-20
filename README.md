@@ -11,3 +11,6 @@ Sc website  <a href="https:\\fianbro.github.io">/>Click in here</a>
 # Credits
 
 Created by = @fian014
+
+# stats
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?fianbro=anuraghazra&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
