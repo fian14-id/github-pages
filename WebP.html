@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/78087246?v=4"
+    />
+    <link rel="stylesheet" href="./img/coki.css">
+    <!-- Title -->
+    <title>🌴 ・ Fiannn14</title>
+  </head>
+  <!-- jika membuat project diusahakan untuk tidak menggunakan internal css -->
+  <!-- karena ini hanya hasil gabut saya, tolong jangan ditiru -->
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --primary-c: #444;
+      --t-c: #fff;
+      --p-m: 8px;
+      --b-r: 15px;
+      --p-ob: center;
+    }
+    h2::selection,
+    h3::selection,
+    p::selection {
+      background-color: deepskyblue;
+      color: black;
+    }
+    body {
+      /* background-image: url("https://im3.ezgif.com/tmp/ezgif-3-1a6e70af47.gif"),
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+      background-size: cover;        //jika ingin background gambar
+      background-repeat: no-repeat;
+      background-attachment: fixed; */
+      background-color: #b0f0f0;
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      display: flex;
+      justify-content: var(--p-ob);
+      align-items: var(--p-ob);
+      flex-direction: column;
+    }
+    .container {
+      display: flex;
+      justify-content: var(--p-ob);
+      align-items: var(--p-ob);
+      flex-direction: column;
+      width: 500px;
+      font-family: 'Poppins', sans-serif;
+      /* flex-wrap: wrap; */
+      background-color: var(--primary-c);
+      padding: var(--p-m);
+      border-radius: var(--b-r);
+      box-shadow: -6px 7px 12px black;
+    }
+    .main-content {
+      padding: var(--p-m);
+      margin: var(--p-m);
+      text-align: var(--p-ob);
+      color: deepskyblue;
+      text-shadow: 0 0 25px var(--t-c);
+    }
+    .main-content video {
+      border-radius: var(--b-r);
+      width: 400px;
+      height: auto;
+      border: 3px solid var(--t-c);
+    }
+    .main-content button {
+      border: 1px solid var(--t-c);
+      background-color: var(--primary-c);
+      color: var(--t-c);
+      padding: var(--p-m);
+      margin: var(--p-m);
+      border-radius: 8px;
+    }
+    .main-content button:hover {
+      background-color: var(--t-c);
+      color: var(--primary-c);
+      transition: 0.25s ease-in-out;
+    }
+    section {
+      display: flex;
+      justify-content: var(--p-ob);
+      align-items: var(--p-ob);
+      position: fixed;
+      bottom: 35px;
+      background-color: var(--primary-c);
+      padding: 10px;
+      border-radius: 5px;
+      width: 25%;
+      box-shadow: -6px 7px 12px black;
+      font-family: 'Poppins', sans-serif;
+    }
+    section a {
+      text-decoration: none;
+    }
+    section a p {
+      color: var(--t-c);
+    }
+    section a p:hover {
+      color: deepskyblue;
+      font-weight: 900;
+    }
+    @media screen and (max-width: 476px) {
+      .container {
+        width: 350px;
+        height: auto;
+      }
+      .main-content video {
+        width: 300px;
+        height: auto;
+      }
+    }
+    @media screen and (min-width: 476px) {
+      .container {
+        width: 400px;
+        height: auto;
+      }
+      .main-content video {
+        width: 350px;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .container {
+        width: 300px;
+        height: auto;
+      }
+      .main-content video {
+        width: 250px;
+        height: auto;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <video controls>
+          <source
+            src="https://fianeunoia.github.io/video/file-27Sept.mp4"
+            type="video/webm"
+          />
+        </video>
+      </div>
+      <div class="main-content">
+        <h2>Reaksi anda?</h2>
+        <button type="submit" name="cool"><h3>Shessh🥶</h3></button>
+        <button type="submit" name="baja"><h3>Tidak Menarik😒</h3></button>
+      </div>
+    </div>
+    <section>
+      <a
+        href="http://fian014.github.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><p>&copy;Fian014</p></a
+      >
+    </section>
+    <div class="wrapper">
+      <img src="./img/cookie.png" alt="">
+      <div class="content">
+        <header>Cookies Consent</header>
+        <p>This website use cookies to ensure you get the best experience on our website.</p>
+        <div class="buttons">
+          <button class="item">I understand</button>
+          <a href="#" class="item">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const cookieBox = document.querySelector(".wrapper"),
+      acceptBtn = cookieBox.querySelector("button");
+  
+      acceptBtn.onclick = ()=>{
+        //setting cookie for 1 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=Fian014; max-age="+60*60*24*30;
+        if(document.cookie){ //if cookie is set
+          cookieBox.classList.add("hide"); //hide cookie box
+        }else{ //if cookie not set then alert an error
+          alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+      }
+      let checkCookie = document.cookie.indexOf("CookieBy=Fian014"); //checking our cookie
+      //if cookie is set then hide the cookie box else show it
+      checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+    </script>
+  </body>
+</html>
+
+<!-- backup code -->
+<!-- background-image: url("https://fianeunoia.github.io/img/pexels-sea.jpg"),
+linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)); -->
+
+<!-- video -->
+<!-- src="https://fianeunoia.github.io/video/file-27Sept.mp4" -->
