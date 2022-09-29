@@ -55,7 +55,7 @@ i {
     justify-content: center;
     text-decoration: none;
     flex-direction: row;
-    color: #fff;
+    color: #eaeaea;
 }
 .nav-link {
     display: flex;
@@ -68,11 +68,12 @@ i {
     padding: 10px;
 }
 .nav-link li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 .nav-link li a:hover {
     color: deepskyblue;
+    font-weight: bolder;
     transition: all ease-in-out .25s;
 }
 .contex {
