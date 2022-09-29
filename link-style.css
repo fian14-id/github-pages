@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+/* file ini tidak untuk ditiru, karena berantakan */
 *, html, body {
     padding: 0;
     margin: 0;
@@ -10,12 +12,25 @@
 }
 body {
     /* background-color: rgb(43, 29, 59); */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), 
-    rgba(0, 0, 0, 0.8)), url("./img/oi.jpeg"); /*set background*/
-    background-size: cover;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.1), 
+    rgba(0, 0, 0, 0.8)), url("./img/oi.jpeg"); set background */
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    background-attachment: fixed; */
+    background-color: #b0f0f0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+p::selection, h2::selection {
+    color: #000;
+    background-color: deepskyblue;
+}
+p {
+    color: #eaeaea;
+}
+i {
+    color: gold;
 }
 .nav {
     text-align: center;
@@ -31,7 +46,7 @@ body {
     border-radius: 50%;
 }
 .nav h2 {
-    color: #fff;
+    color: deepskyblue;
 }.nav li {
     list-style-type: none;
 }
@@ -61,22 +76,19 @@ body {
     transition: all ease-in-out .25s;
 }
 .contex {
-    width: auto;
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
 .btnLink {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 50%;
     height: 100%;
     padding: 20px;
     margin: 10px;
-    background: #fff;
+    background: black;
     border-radius: 15px;
 }
 .btnLink:before {
@@ -85,34 +97,48 @@ body {
     filter: blur(10px);
 }
 .btnLink:hover {
-    background-color: aquamarine;
+    background-color: #222;
     transition: all ease-in-out .25s;
 }
-.btnLink img {
-    width: 35px;
-    height: 35px;
-    position: static;
+.link img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    width: 50px;
+    height: 50px;
 }
-.btnLink p a {
+.link h4 a {
     text-decoration: none;
-    color: cornflowerblue;
-    padding-left: 25px;
-    font-size: 1.5em;
+    color: deepskyblue;
+    font-size: .7em;
+    text-align: center;
 }
 .btnLink p a:hover {
     color: #fff;
 
 }
-@media screen and (max-width:680px){
+.desc {
+    margin: 20px;
+    padding: 3px;
+    flex-direction: column;
+    width: 100%;
+}
+.link {
+    width: 10%;   
+    display: inline;
+}
 
-	#maincontent{
-		width: auto;
-		float: none;
-	}
-	#sidebar{
-		width: auto;
-		float: none;
-	}
+@media screen and (max-width: 476px) {
+    .desc {
+        margin: 25px;
+    }
+}
+@media screen and (min-width: 476px) {
+    .desc {
+        margin: 25px;
+    }
 }
 
 /* Jendela Pop Up */
