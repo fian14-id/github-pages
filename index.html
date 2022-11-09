@@ -36,12 +36,14 @@
       flex-direction: row;
     }
     .me {
-      width: 10%;
+      width: 20%;
+      height: 25%;
     }
     .desc {
       display: flex;
       flex-direction: column;
       padding-left: 10px;
+      font-size: 2em;
       z-index: -1;
     }
     .space {
@@ -57,20 +59,47 @@
       width: 70%;
       padding: 20px;
       color: #fff;
+      border-radius: 20px;
       background: #ef798a;
-      border-radius: 15px 0;
+      box-shadow:  20px 20px 60px #cb6775,
+             -20px -20px 60px #ff8b9f;
+      /*border-radius: 15px 0;*/
     }
     .fromme video, .fromme img {
-      width: 200px;
+      width: 400px;
       height: auto;
-      border-radius: 5px;
+      border-radius: 8px;
+      box-shadow:  20px 20px 60px #cb6775,
+             -20px -20px 60px #ff8b9f;
+      /*border-radius: 15px;*/
     }
     .fromme span {
       color: #b0f0f0;
-      font-size: .8em;
+      font-size: 1.5em;
     }
     iframe {
-      position: sticky;
+      width: 80%;
+    }
+    @media screen and (max-width: 550px) {
+      .me {
+        width: 10%;
+        height: 10%;
+      }
+      .desc {
+        font-size: 1em;
+      }
+      .fromme img {
+        width: 200px;
+      }
+      .fromme span {
+        font-size: .8em;
+      }
+    }
+    @media screen and (max-height: 350px) {
+      .fromme {
+        width: 90%;
+        height: 55%;
+      }
     }
   </style>
   <body>
@@ -98,7 +127,7 @@
 <br />
 <br />
 
-    <iframe src="./Comment.html" name="iframe_a" title="Iframe Example" width="400" height="350"style="border: none;"></iframe>
+    <iframe src="./Comment.html" name="iframe_a" title="Iframe Example" style="border: none;"></iframe>
     
     <script type="text/javascript" charset="utf-8">
       var vid = document.getElementById("myVideo");
