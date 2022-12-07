@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HTML Meta Tags -->
+    <title>Fian14 | Profile</title>
+    <meta name="description" content="undefined" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://fian014.site/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fian14 | Profile" />
+    <meta property="og:description" content="undefined" />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="fian014.site" />
+    <meta property="twitter:url" content="https://fian014.site/" />
+    <meta name="twitter:title" content="Fian14 | Profile" />
+    <meta name="twitter:description" content="undefined" />
+    <meta name="twitter:image" content="" />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <link rel="stylesheet" href="index.css" />
+    <title>UI Fian</title>
+  </head>
+  <body>
+    <div class="c">
+      <div class="cb"></div>
+      <div class="c__co">
+        <nav class="co-nav">
+          <strong id="name"></strong>
+          <ul>
+            <li><a href="https://">F</a></li>
+            <li><a href="https://">I</a></li>
+            <li><a href="https://">T</a></li>
+            <li><a href="https://">G</a></li>
+          </ul>
+        </nav>
+        <div class="co-body">
+          <!-- <h2 id="ip">198.389.28.27</h2> -->
+          <span id="date"></span>
+          <span id="tgl"></span>
+          <br />
+          <br />
+          <button onclick="inputName()">Add Name</button>
+        </div>
+      </div>
+    </div>
+    <script type="application/javascript">
+      function getIP(json) {
+        let ip = document.getElementById("ip");
+        ip.innerText = "Your IP is " + json.ip;
+      }
+    </script>
+
+    <script
+      type="application/javascript"
+      src="https://api.ipify.org?format=jsonp&callback=getIP"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Poppins&display=swap');
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', Sans-Serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-size: .8em;
+}
+.c {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./wallpaperbetter\ \(6\).jpg") no-repeat center;
+    background-size: 400%;
+}
+.cb {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    backdrop-filter: blur(5px);
+}
+.c__co {
+    position: relative;
+    background: url("./wallpaperbetter\ \(6\).jpg") center;
+    background-size: cover;
+    width: 50%;
+    height: 55%;
+    z-index: 2;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px #222;
+}
+.co-nav {
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.co-nav strong {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: rgb(0, 0,0);
+}
+.co-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: row;
+    width: 18%;
+}
+.c__co .co-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+.co-body .con {
+    display: flex;
+    flex-direction: column;
+}
+.co-body button {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .3);
+    border: none;
+}
+#date {
+    font-size: 2.5em;
+    color: #eaeaea;
+    font-family: 'Montserrat', Sans-Serif;
+    font-weight: 800;
+}
+#tgl {
+    color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
