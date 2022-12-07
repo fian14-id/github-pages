@@ -11,7 +11,7 @@ Sc website  <a href="https:\\fianbro.github.io">/>Click in here</a>
 </p>
 
 ## Random Build for now
-<p align="center">
+<p>
 So, don't get your hopes up on this account
 </p>
 
