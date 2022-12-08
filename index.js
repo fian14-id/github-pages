@@ -1,5 +1,3 @@
-let date = document.getElementById("date");
-let tgl = document.getElementById("tgl");
 let space = " ";
 
 function inputName() {
@@ -12,7 +10,10 @@ function inputName() {
   }
 }
 
-let cal = new Date();
+setInterval(function () {
+let date = document.getElementById("date");
+let tgl = document.getElementById("tgl");
+  let cal = new Date();
 const day = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
 const month = [
   "Januari",
@@ -28,8 +29,6 @@ const month = [
   "November",
   "Desember",
 ];
-
-setInterval(function () {
   date.innerText = cal.getHours() + ":" + cal.getMinutes();
   tgl.innerText =
     day[cal.getDay()] +
