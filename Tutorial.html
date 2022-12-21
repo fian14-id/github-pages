@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maaf Kalo Jelek</title>
+  </head>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    .deep {
+      background: #222;
+      color: #fff;
+    }
+    .deep .c-btn {
+      background: #222;
+      color: #fff;
+      border: #fff solid 2px;
+    }
+    .not-support {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .c {
+      display: none;
+    }
+
+    @media screen and (max-width: 680px) {
+      .not-support {
+        display: none;
+      }
+      .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 45px;
+      }
+      .c h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 2px #8f7fff;
+      }
+      .c-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: #8f7fff;
+        padding: 15px 10px;
+        border-radius: 5px;
+      }
+      .c-box video {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .box-btn {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .c-btn {
+        border: #222 solid 2px;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        font-weight: 800;
+        background: #fff;
+        color: #222;
+        padding: 8px 5px;
+        text-decoration: none;
+        cursor: progress;
+      }
+      .c-md {
+        display: none;
+        width: 95%;
+        background: #8f7fff;
+        margin-top: 10%;
+      }
+
+      .c-md .md-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        text-align: justify;
+        color: #fff;
+      }
+      .c-md::before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 10%;
+        background: #222;
+      }
+    }
+  </style>
+  <body>
+    <div class="not-support">
+      <div class="p">Ukuran Layar tidak support / terlalu besar</div>
+    </div>
+    <div class="c">
+      <h2 id="name"></h2>
+      <br />
+      <div class="c-box">
+        <video controls preload="metadata">
+          <source src="https://www.dropbox.com/s/xg5pkgieczfg6qi/km_20221202_1080p.mp4?dl=1" type="video/mp4" />
+          Browser Kamu Tidak Support video ini bang!
+        </video>
+        <br />
+        <div class="box-btn">
+          <button class="c-btn" id="btn">Baca Selengkapnya</button>
+          <button class="c-btn" onclick="gelapMode()" style="width: auto">
+            🌙Gelap
+          </button>
+        </div>
+      </div>
+      <div class="c-md" id="desc">
+        <div class="md-text">
+          <p>
+            Aplikasi yang dibutuhkan hanyalah <b>PiscayPro</b> dan aplikasi tersebut
+            bisa didownload lewat google Chrome. Atau bisa Download Tombol
+            download dibawah ini. Tonton dengan Full layer agar lebih jelas.
+          </p>
+        </div>
+      </div>
+      <br />
+      <a href="./com.Shinycore.picsaypro.apk" class="c-btn" download
+        >Download</a
+      >
+    </div>
+
+    <script>
+      const btn = document
+        .querySelector("#btn")
+        .addEventListener("click", tampilkan);
+      const md = document.getElementById("desc");
+      const nama = document.getElementById("name");
+      const body = document.body;
+
+      let name = prompt("Halo, Siapa Nama mu?");
+
+      if (name) {
+        nama.innerText = "Halo, " + name + "!";
+        document.title = name + ", ini dari Fian014"
+        console.log(document.title)
+      } else {
+        nama.innerText = "Halo, " + "Tanpa Nama!";
+      }
+
+      function tampilkan() {
+        md.style.display = "flex";
+      }
+
+      function gelapMode() {
+        body.classList.toggle("deep");
+      }
+    </script>
+  </body>
+</html>
