@@ -28,3 +28,12 @@ const update = () => {
 };
 
 inputType.onchange = update;
+
+function defaultStyle() {
+  object1.style.background = null;
+  object2.style.color = null;
+  object2.style.fontSize = null;
+  object2.style.fontFamily = null;
+  object1.style.width = null;
+  object1.style.height = null;
+}
